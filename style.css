@@ -218,6 +218,30 @@ body{
     margin: 20px 0 40px;
 }
 
+.blog{
+    height: 100vh;
+    background: url("fondoportafoilio.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+}
+.blog-content{
+    max-width: 50%;
+
+}
+.blog-content h3{
+    position: relative;
+    font-size: 8vh;
+    font-weight: 700;
+    color: rgb(5, 231, 220);
+}
+.blog-content p {
+    position: relative;
+    font-size: 2vh;
+    margin: 10px 0 10px;
+}
 @keyframes showRight {
     100%{
         width: 0;
