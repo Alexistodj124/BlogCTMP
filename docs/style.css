@@ -225,7 +225,6 @@ body{
     display: flex;
     align-items: center;
     padding: 0 10%;
-
 }
 .blog-content{
     max-width: 50%;
@@ -233,14 +232,21 @@ body{
 }
 .blog-content h3{
     position: relative;
-    font-size: 8vh;
+    font-size: 5vh;
     font-weight: 700;
     color: rgb(5, 231, 220);
 }
-.blog-content p {
+/* .blog-content p {
     position: relative;
     font-size: 2vh;
     margin: 10px 0 10px;
+} */
+.blog-content {
+    max-height: 450px; /* Define la altura máxima antes de que aparezca el scroll */
+    overflow-y: auto;  /* Habilita el scroll vertical */
+    font-size: 2vh;
+    padding: 10px;     /* Espacio interior */
+    text-align: justify;
 }
 @keyframes showRight {
     100%{
