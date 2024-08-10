@@ -226,10 +226,6 @@ body{
     align-items: center;
     padding: 0 10%;
 }
-.blog-content{
-    max-width: 50%;
-
-}
 .blog-content h3{
     position: relative;
     font-size: 5vh;
@@ -242,6 +238,7 @@ body{
     margin: 10px 0 10px;
 } */
 .blog-content {
+    max-width: 50%;
     max-height: 450px; /* Define la altura máxima antes de que aparezca el scroll */
     overflow-y: auto;  /* Habilita el scroll vertical */
     font-size: 2vh;
