@@ -1,8 +1,8 @@
 var typed = new Typed('.multiple-text', {
     strings: ['Frontend Developer', 'Backend Developer', 'Emprendedor', 'Dueño de negocios', 'Wakeboarder'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
+    typeSpeed: 50,
+    backSpeed: 50,
+    backDelay: 2000,
     loop: true
   });
 
