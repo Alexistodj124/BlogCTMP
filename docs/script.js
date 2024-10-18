@@ -26,21 +26,21 @@ function typeContent(index) {
   if (index < titles.length) {
     new Typed('.about-title', {
       strings: [titles[index]],
-      typeSpeed: 20,
-      backSpeed: 10,
-      backDelay: 1000,
+      typeSpeed: 10, // Aumentar velocidad para hacerlo más lento
+      backSpeed: 25, // Aumentar para borrar más lento
+      backDelay: 3000, // Retrasar más antes de borrar
       showCursor: false,
       onComplete: function () {
         new Typed('.about-text', {
           strings: [texts[index]],
-          typeSpeed: 15,
-          backSpeed: 5,
-          backDelay: 1000,
+          typeSpeed: 75, // Más lento para el texto
+          backSpeed: 35, // Borrado más pausado
+          backDelay: 2000, // Pausa más larga antes de borrar el texto
           showCursor: false,
           onComplete: function () {
             setTimeout(function () {
               typeContent(index + 1);
-            }, 1000);
+            }, 2000); // Pausa más larga entre títulos
           }
         });
       }
@@ -48,9 +48,10 @@ function typeContent(index) {
   } else {
     setTimeout(function () {
       typeContent(0);
-    }, 1000); 
+    }, 2000); // Pausa más larga al reiniciar
   }
 }
+
 typeContent(0);
 
 
